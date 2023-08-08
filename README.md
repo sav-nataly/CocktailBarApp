@@ -25,12 +25,13 @@
 Для сериализации/десереалиазации используется kotlin.serialization.
 Архитектура как таковая не была использована, но была попытка в clean architecture.
 
-Первый запуск приложения, добавление коктейля в пустой список:
+Первый запуск приложения, добавление коктейля в пустой список:[
 https://github.com/sav-nataly/CocktailBarApp/assets/45975245/545394bf-2d37-4f3d-8f38-c8337c48406b
+](https://drive.google.com/file/d/1nmD6VlW1ZRxTKH9DcqWFW4D8OWGbKrKt/view?usp=sharing)
 
 Открытие карточки коктейля, добавление коктейля без изображения:
-https://github.com/sav-nataly/CocktailBarApp/assets/45975245/3baa0d81-6fac-4dbd-b767-921d09a21bf1
+[https://github.com/sav-nataly/CocktailBarApp/assets/45975245/3baa0d81-6fac-4dbd-b767-921d09a21bf1](https://drive.google.com/file/d/1Kyhnlq3KdbP-X2KTX3YK3JuzP44bBd7v/view?usp=sharing)
 
 Удаление ингредиента из списка, отмена добавления нового ингредиента и нового коктейля
-https://github.com/sav-nataly/CocktailBarApp/assets/45975245/a3f40141-c322-4a9b-8881-308792ae46b9
+[https://github.com/sav-nataly/CocktailBarApp/assets/45975245/a3f40141-c322-4a9b-8881-308792ae46b9](https://drive.google.com/file/d/1TQOsLEwx8a4A3j-mksZaZWoONT2LKlRi/view?usp=sharing)https://drive.google.com/file/d/1TQOsLEwx8a4A3j-mksZaZWoONT2LKlRi/view?usp=sharing
 
