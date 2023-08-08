@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragment.CocktailCardFragment">
+
+    <ImageView
+        android:id="@+id/cocktail_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitStart"
+        android:src="@color/material_dynamic_neutral80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginBottom="-44dp"
+        android:elevation="0dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <TextView
+                android:id="@+id/cocktail_name_tv"
+                style="@style/DidactGothic.32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="TExt" />
+
+            <TextView
+                android:id="@+id/cocktail_description_tv"
+                style="@style/DidactGothic.16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/cocktail_name_tv"
+                tools:text="TExt" />
+
+            <TextView
+                android:id="@+id/cocktail_recipe_tv"
+                style="@style/DidactGothic.16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/cocktail_description_tv"
+                tools:text="TExt" />
+
+            <Button
+                android:id="@+id/edit_btn"
+                style="@style/DidactGothic.24.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

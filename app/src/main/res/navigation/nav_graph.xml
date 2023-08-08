@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/emptyListFragment"
+        android:name="ru.savina.cocktailbar.presentation.fragment.EmptyListFragment"
+        android:label="fragment_empty_list"
+        tools:layout="@layout/fragment_empty_list" >
+        <action
+            android:id="@+id/action_emptyListFragment_to_newCocktailFragment"
+            app:destination="@id/newCocktailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocktailListFragment"
+        android:name="ru.savina.cocktailbar.presentation.fragment.CocktailListFragment"
+        android:label="fragment_cocktail_list"
+        tools:layout="@layout/fragment_cocktail_list" >
+        <action
+            android:id="@+id/action_cocktailListFragment_to_newCocktailFragment"
+            app:destination="@id/newCocktailFragment" />
+        <action
+            android:id="@+id/action_cocktailListFragment_to_cocktailCardFragment"
+            app:destination="@id/cocktailCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="ru.savina.cocktailbar.presentation.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_cocktailListFragment"
+            app:destination="@id/cocktailListFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_emptyListFragment"
+            app:destination="@id/emptyListFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCocktailFragment"
+        android:name="ru.savina.cocktailbar.presentation.fragment.NewCocktailFragment"
+        android:label="fragment_new_cocktail"
+        tools:layout="@layout/fragment_new_cocktail" >
+        <action
+            android:id="@+id/action_newCocktailFragment_to_cocktailListFragment"
+            app:destination="@id/cocktailListFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocktailCardFragment"
+        android:name="ru.savina.cocktailbar.presentation.fragment.CocktailCardFragment"
+        android:label="fragment_cocktail_card"
+        tools:layout="@layout/fragment_cocktail_card" />
+</navigation>

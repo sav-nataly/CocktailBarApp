@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="32dp"
+    tools:context=".presentation.fragment.NewCocktailFragment">
+
+    <ImageView
+        android:id="@+id/cocktail_card_iv"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cocktail_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:singleLine="true"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:boxStrokeColor="@color/material_dynamic_neutral20"
+        app:errorEnabled="true"
+        app:helperText="Title"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@style/DidactGothic.12"
+        app:layout_constraintBottom_toTopOf="@+id/cocktail_description_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cocktail_card_iv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/texr"
+            style="@style/DidactGothic.16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/cocktail_name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cocktail_description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:singleLine="false"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:helperText="Optional field"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@style/DidactGothic.12"
+        app:layout_constraintBottom_toTopOf="@id/cocktail_recipe_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cocktail_name_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/DidactGothic.16"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="@string/cocktail_description" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cocktail_recipe_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:singleLine="false"
+        app:boxCornerRadiusBottomEnd="32dp"
+        app:boxCornerRadiusBottomStart="32dp"
+        app:boxCornerRadiusTopEnd="32dp"
+        app:boxCornerRadiusTopStart="32dp"
+        app:helperText="Optional field"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@style/DidactGothic.12"
+        app:layout_constraintBottom_toTopOf="@+id/save_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cocktail_description_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/DidactGothic.16"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="@string/cocktail_recipe" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/DidactGothic.24.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/save"
+        app:layout_constraintBottom_toTopOf="@+id/cancel_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        style="@style/DidactGothic.24.Blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
