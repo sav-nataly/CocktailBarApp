@@ -46,5 +46,14 @@ class CocktailCardFragment : Fragment() {
             )
         binding.cocktailDescriptionTv.text = viewModel.selectedCocktail.value?.description;
         binding.cocktailRecipeTv.text = viewModel.selectedCocktail.value?.recipe;
+
+
+        if (viewModel.selectedCocktail.value?.ingredients?.size!! > 0) {
+            var str: String = ""
+            for (ingredient in viewModel.selectedCocktail.value?.ingredients!!) {
+                str = str.plus(ingredient.description).plus("\n")
+            }
+            binding.cocktailIngredientsTv.text = str
+        }
     }
 }
